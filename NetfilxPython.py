@@ -148,7 +148,7 @@ def main():
     col1, col2 = st.columns([1, 4])
 
     with col1:
-        st.image("D:/IBRINK-PC-USER/Desktop/Dados/BaseDados/netflix.png", width=200)
+        st.image("netflix.png", width=200)
         st.markdown("<div style='padding-right: 20px;'>", unsafe_allow_html=True)
 
         genre_filter = st.selectbox("Filtrar por Gênero", options=df['genre'].unique())
