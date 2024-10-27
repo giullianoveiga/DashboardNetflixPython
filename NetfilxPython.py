@@ -21,7 +21,7 @@ st.markdown("""
 # Função para carregar e processar os dados
 def load_data():
     # Carregar o arquivo CSV
-    df = pd.read_csv(r'\n_movies.csv')
+    df = pd.read_csv(r'n_movies.csv')
 
     # Limpar a coluna 'year' e extrair apenas o primeiro ano numérico
     df['year'] = df['year'].str.extract(r'(\d{4})')
@@ -148,7 +148,7 @@ def main():
     # Parte 1 - Filtros e informações na coluna 1 (coluna compacta)
     with col1:
         # Exibir a logo da Netflix acima dos filtros
-        st.image("\netflix.png", width=200)
+        st.image("netflix.png", width=200)
 
         st.markdown("<div style='padding-right: 20px;'>", unsafe_allow_html=True)
 
